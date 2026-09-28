@@ -1,0 +1,645 @@
+[
+  {
+    "id": "992267",
+    "categoryId": "sweet",
+    "name": "Моти",
+    "description": "Творожный сыр, сливки, сахарная пудра, рисовое тесто, ягодная начинка",
+    "composition": "Творожный сыр, сливки, сахарная пудра, рисовое тесто, ягодная начинка",
+    "weight": "1 шт",
+    "price": 200,
+    "image": "/images/992267.webp",
+    "popular": true,
+    "fresh": false
+  },
+  {
+    "id": "992287",
+    "categoryId": "drinks",
+    "name": "Сок в ассортименте",
+    "description": "Сок в ассортименте",
+    "composition": "Сок в ассортименте",
+    "weight": "300 мл",
+    "price": 200,
+    "image": "/images/992287.webp",
+    "popular": false,
+    "fresh": false
+  },
+  {
+    "id": "992230",
+    "categoryId": "croissants",
+    "name": "Круассан «Заварной -клубника»",
+    "description": "Заварной крем/конфитюр клубника",
+    "composition": "Заварной крем/конфитюр клубника",
+    "weight": "1 шт",
+    "price": 350,
+    "image": "/images/992230.webp",
+    "popular": false,
+    "fresh": true
+  },
+  {
+    "id": "992233",
+    "categoryId": "croissants",
+    "name": "Круассан «Фисташка»",
+    "description": "Фисташковый крем/конфитюр малина -клубника",
+    "composition": "Фисташковый крем/конфитюр малина -клубника",
+    "weight": "1 шт",
+    "price": 350,
+    "image": "/images/992233.webp",
+    "popular": true,
+    "fresh": true
+  },
+  {
+    "id": "992232",
+    "categoryId": "croissants",
+    "name": "Круассан «Шоколад»",
+    "description": "Шоколадный ганаш/арахис",
+    "composition": "Шоколадный ганаш/арахис",
+    "weight": "1 шт",
+    "price": 350,
+    "image": "/images/992232.webp",
+    "popular": true,
+    "fresh": true
+  },
+  {
+    "id": "992239",
+    "categoryId": "sweet",
+    "name": "Сникерс",
+    "description": "Шоколадный бисквит/крем чиз/соленая карамель/шоколадный ганаш/арахис",
+    "composition": "Шоколадный бисквит/крем чиз/соленая карамель/шоколадный ганаш/арахис",
+    "weight": "270 г",
+    "price": 350,
+    "image": "/images/992239.webp",
+    "popular": false,
+    "fresh": false
+  },
+  {
+    "id": "992237",
+    "categoryId": "sweet",
+    "name": "Трайфл клубника-банан",
+    "description": "Шоколадный бисквит/банан/клубничный/крем чиз/шоколадный ганаш",
+    "composition": "Шоколадный бисквит/банан/клубничный/крем чиз/шоколадный ганаш",
+    "weight": "180 г",
+    "price": 350,
+    "image": "/images/992237.webp",
+    "popular": false,
+    "fresh": false
+  },
+  {
+    "id": "992250",
+    "categoryId": "hot",
+    "name": "Лапша с томленым мясом в соусе демиглас",
+    "description": "Лапша с томленым мясом в соусе демиглас",
+    "composition": "Лапша с томленым мясом в соусе демиглас",
+    "weight": "340г",
+    "price": 500,
+    "image": "/images/992250.webp",
+    "popular": false,
+    "fresh": false
+  },
+  {
+    "id": "992240",
+    "categoryId": "sweet",
+    "name": "Дубайский",
+    "description": "Шоколадный бисквит/катаифи/фисташковый крем/шоколадный ганаш/фисташка",
+    "composition": "Шоколадный бисквит/катаифи/фисташковый крем/шоколадный ганаш/фисташка",
+    "weight": "270 г",
+    "price": 550,
+    "image": "/images/992240.webp",
+    "popular": false,
+    "fresh": false
+  },
+  {
+    "id": "1006687",
+    "categoryId": "pizza",
+    "name": "Пицца Маргарита",
+    "description": "Основа пшеничная, томатный соус, сыр моцарелла",
+    "composition": "Основа пшеничная, томатный соус, сыр моцарелла",
+    "weight": "400 г",
+    "price": 450,
+    "image": "/images/1006687.webp",
+    "popular": true,
+    "fresh": false
+  },
+  {
+    "id": "1006686",
+    "categoryId": "pizza",
+    "name": "Пицца Пепперони",
+    "description": "Основа пшеничная, томатный соус, сыр моцарелла, пепперони",
+    "composition": "Основа пшеничная, томатный соус, сыр моцарелла, пепперони",
+    "weight": "400 г",
+    "price": 550,
+    "image": "/images/1006686.webp",
+    "popular": true,
+    "fresh": false
+  },
+  {
+    "id": "1006688",
+    "categoryId": "pizza",
+    "name": "Пицца 4 сыра",
+    "description": "Основа пшеничная, соус «Бьянко», сыр моцарелла, чеддер, дор блю, мини моцарелла, пармезан",
+    "composition": "Основа пшеничная, соус «Бьянко», сыр моцарелла, чеддер, дор блю, мини моцарелла, пармезан",
+    "weight": "400 г",
+    "price": 650,
+    "image": "/images/1006688.webp",
+    "popular": false,
+    "fresh": false
+  },
+  {
+    "id": "1006689",
+    "categoryId": "pizza",
+    "name": "Пицца Груша карамельная с сыром Дор блю",
+    "description": "Основа пшеничная, соус Бьянко, сыр моцарелла,  гуша карамелизованная в специях и белом вине,  гецкий орех, мёд",
+    "composition": "Основа пшеничная, соус Бьянко, сыр моцарелла,  гуша карамелизованная в специях и белом вине,  гецкий орех, мёд",
+    "weight": "500 г",
+    "price": 650,
+    "image": "/images/1006689.webp",
+    "popular": false,
+    "fresh": false
+  },
+  {
+    "id": "1006691",
+    "categoryId": "pizza",
+    "name": "Пицца Барбекю",
+    "description": "Основа пшеничная, томатный соус, сыр моцарелла, пепперони, сосиски охотничьи,  гудинка копченая, огурец маринованный, помидор, соус барбекю, красный лук",
+    "composition": "Основа пшеничная, томатный соус, сыр моцарелла, пепперони, сосиски охотничьи,  гудинка копченая, огурец маринованный, помидор, соус барбекю, красный лук",
+    "weight": "540 г",
+    "price": 680,
+    "image": "/images/1006691.webp",
+    "popular": false,
+    "fresh": false
+  },
+  {
+    "id": "1006690",
+    "categoryId": "pizza",
+    "name": "Пицца с креветками",
+    "description": "Основа пшеничная, соус бьянко, сыр моцарелла, креветка, соус свит чили, соус терияки",
+    "composition": "Основа пшеничная, соус бьянко, сыр моцарелла, креветка, соус свит чили, соус терияки",
+    "weight": "450 г",
+    "price": 680,
+    "image": "/images/1006690.webp",
+    "popular": false,
+    "fresh": false
+  },
+  {
+    "id": "1006039",
+    "categoryId": "hot",
+    "name": "Картофельные дольки с соусом спайс",
+    "description": "Картофельные дольки с соусом спайс",
+    "composition": "Картофельные дольки с соусом спайс",
+    "weight": "100/30 г",
+    "price": 200,
+    "image": "/images/1006039.webp",
+    "popular": false,
+    "fresh": false
+  },
+  {
+    "id": "1006040",
+    "categoryId": "hot",
+    "name": "Наггетсы куриные с соусом свит чили",
+    "description": "Наггетсы куриные с соусом свит чили",
+    "composition": "Наггетсы куриные с соусом свит чили",
+    "weight": "100/30 г",
+    "price": 200,
+    "image": "/images/1006040.webp",
+    "popular": false,
+    "fresh": false
+  },
+  {
+    "id": "1006043",
+    "categoryId": "breakfast",
+    "name": "Каша овсяная с вишней и фисташковой пастой",
+    "description": "Каша овсяная с вишней и фисташковой пастой",
+    "composition": "Каша овсяная с вишней и фисташковой пастой",
+    "weight": "250 г",
+    "price": 300,
+    "image": "/images/1006043.webp",
+    "popular": false,
+    "fresh": false
+  },
+  {
+    "id": "1006042",
+    "categoryId": "breakfast",
+    "name": "Каша овсяная с пармезаном и яйцом пашот",
+    "description": "Каша овсяная с пармезаном и яйцом пашот",
+    "composition": "Каша овсяная с пармезаном и яйцом пашот",
+    "weight": "250 г",
+    "price": 300,
+    "image": "/images/1006042.webp",
+    "popular": false,
+    "fresh": false
+  },
+  {
+    "id": "1006041",
+    "categoryId": "hot",
+    "name": "Сырные палочки с вишней и сметаной",
+    "description": "Сырные палочки с вишней и сметаной",
+    "composition": "Сырные палочки с вишней и сметаной",
+    "weight": "100/60 г",
+    "price": 300,
+    "image": "/images/1006041.webp",
+    "popular": false,
+    "fresh": false
+  },
+  {
+    "id": "1006047",
+    "categoryId": "hot",
+    "name": "Сэндвич с курицей",
+    "description": "Хлеб тостовый/крем чиз/микс зелени/курица запеченная/помидор свежий/огурец маринован/унаги/сырный",
+    "composition": "Хлеб тостовый/крем чиз/микс зелени/курица запеченная/помидор свежий/огурец маринован/унаги/сырный",
+    "weight": "190 г",
+    "price": 300,
+    "image": "/images/1006047.webp",
+    "popular": false,
+    "fresh": false
+  },
+  {
+    "id": "1006046",
+    "categoryId": "hot",
+    "name": "Сэндвич с тунцом",
+    "description": "Сэндвич с тунцом",
+    "composition": "Сэндвич с тунцом",
+    "weight": "190 г",
+    "price": 300,
+    "image": "/images/1006046.webp",
+    "popular": false,
+    "fresh": false
+  },
+  {
+    "id": "1006038",
+    "categoryId": "breakfast",
+    "name": "Сырники с вишней и сметаной",
+    "description": "Сырники с вишней и сметаной",
+    "composition": "Сырники с вишней и сметаной",
+    "weight": "150/60 г",
+    "price": 350,
+    "image": "/images/1006038.webp",
+    "popular": true,
+    "fresh": false
+  },
+  {
+    "id": "1006048",
+    "categoryId": "hot",
+    "name": "Сэндвич с лососем",
+    "description": "Хлеб тостовый/крем чиз/микс зелени/лосось с/сол/свежий огурец/унаги",
+    "composition": "Хлеб тостовый/крем чиз/микс зелени/лосось с/сол/свежий огурец/унаги",
+    "weight": "175г",
+    "price": 350,
+    "image": "/images/1006048.webp",
+    "popular": false,
+    "fresh": false
+  },
+  {
+    "id": "1006035",
+    "categoryId": "hot",
+    "name": "Роти с сыром",
+    "description": "Подается с овощным гарниром: свежими и вялеными томатами",
+    "composition": "Подается с овощным гарниром: свежими и вялеными томатами",
+    "weight": "180/60 г",
+    "price": 380,
+    "image": "/images/1006035.webp",
+    "popular": false,
+    "fresh": false
+  },
+  {
+    "id": "1006049",
+    "categoryId": "croissants",
+    "name": "Круассан с курицей",
+    "description": "Курица запеченная/крем чиз/микс зелени/огурец марин./помидор свежий/соус унаги или спайс",
+    "composition": "Курица запеченная/крем чиз/микс зелени/огурец марин./помидор свежий/соус унаги или спайс",
+    "weight": "200г",
+    "price": 400,
+    "image": "/images/1006049.webp",
+    "popular": true,
+    "fresh": true
+  },
+  {
+    "id": "1006032",
+    "categoryId": "croissants",
+    "name": "Круассан с тунцом",
+    "description": "Тунец консервированный, творожный сыр, вяленые томаты, маринованный огурец, лист салата, соус унаги и спайс",
+    "composition": "Тунец консервированный, творожный сыр, вяленые томаты, маринованный огурец, лист салата, соус унаги и спайс",
+    "weight": "200 г",
+    "price": 400,
+    "image": "/images/1006032.webp",
+    "popular": false,
+    "fresh": true
+  },
+  {
+    "id": "1006053",
+    "categoryId": "croissants",
+    "name": "Круассан с креветками",
+    "description": "Креветки/свежий огурец/микс зелени/крем чиз/унаги",
+    "composition": "Креветки/свежий огурец/микс зелени/крем чиз/унаги",
+    "weight": "190г",
+    "price": 450,
+    "image": "/images/1006053.webp",
+    "popular": false,
+    "fresh": true
+  },
+  {
+    "id": "1006054",
+    "categoryId": "croissants",
+    "name": "Круассан с лососем и яйцом пашот под сырным соусом",
+    "description": "Лосось с/с/свежий огурец/микс зелени/крем чиз/унаги",
+    "composition": "Лосось с/с/свежий огурец/микс зелени/крем чиз/унаги",
+    "weight": "240г",
+    "price": 450,
+    "image": "/images/1006054.webp",
+    "popular": false,
+    "fresh": true
+  },
+  {
+    "id": "1006052",
+    "categoryId": "croissants",
+    "name": "Круассан с томленым мясом BBQ",
+    "description": "Мясо томленое/крем чиз/микс зелени/огурец марин./лук красный/соус унаги/барбекю",
+    "composition": "Мясо томленое/крем чиз/микс зелени/огурец марин./лук красный/соус унаги/барбекю",
+    "weight": "230г",
+    "price": 450,
+    "image": "/images/1006052.webp",
+    "popular": false,
+    "fresh": true
+  },
+  {
+    "id": "1006036",
+    "categoryId": "hot",
+    "name": "Роти с мясом",
+    "description": "Подается с овощным гарниром: маринованным огурцом, сыром и красным луком",
+    "composition": "Подается с овощным гарниром: маринованным огурцом, сыром и красным луком",
+    "weight": "200/60 г",
+    "price": 450,
+    "image": "/images/1006036.webp",
+    "popular": false,
+    "fresh": false
+  },
+  {
+    "id": "1006037",
+    "categoryId": "hot",
+    "name": "Роти с тунцом",
+    "description": "Подается с овощным гарниром: маринованным огурцом, отварным яйцом, творожным сыром и красным луком",
+    "composition": "Подается с овощным гарниром: маринованным огурцом, отварным яйцом, творожным сыром и красным луком",
+    "weight": "180/60 г",
+    "price": 450,
+    "image": "/images/1006037.webp",
+    "popular": false,
+    "fresh": false
+  },
+  {
+    "id": "992251",
+    "categoryId": "hot",
+    "name": "Лапша креветками том-ям",
+    "description": "Яичная лапша/креветки/том ям паста/сливки",
+    "composition": "Яичная лапша/креветки/том ям паста/сливки",
+    "weight": "250г",
+    "price": 500,
+    "image": "/images/992251.webp",
+    "popular": true,
+    "fresh": false
+  },
+  {
+    "id": "1003734",
+    "categoryId": "hot",
+    "name": "Суп с лапшой и курицей панко",
+    "description": "Суп с лапшой и курицей панко",
+    "composition": "Суп с лапшой и курицей панко",
+    "weight": "500 г",
+    "price": 500,
+    "image": "/images/1003734.webp",
+    "popular": false,
+    "fresh": false
+  },
+  {
+    "id": "1003730",
+    "categoryId": "breakfast",
+    "name": "Завтрак с охотничьими колбасками, картофелем по-деревенски, глазуньей и овощами",
+    "description": "Завтрак с охотничьими колбасками, картофелем по-деревенски, глазуньей и овощами",
+    "composition": "Завтрак с охотничьими колбасками, картофелем по-деревенски, глазуньей и овощами",
+    "weight": "300 г",
+    "price": 550,
+    "image": "/images/1003730.webp",
+    "popular": false,
+    "fresh": false
+  },
+  {
+    "id": "1006045",
+    "categoryId": "hot",
+    "name": "Лапша в сырном соусе с курицей панко",
+    "description": "Пшеничная лапша, курица в панировке из сухарей, сливки, сыр чеддер, сыр пармезан",
+    "composition": "Пшеничная лапша, курица в панировке из сухарей, сливки, сыр чеддер, сыр пармезан",
+    "weight": "280 г",
+    "price": 550,
+    "image": "/images/1006045.webp",
+    "popular": false,
+    "fresh": false
+  },
+  {
+    "id": "1006055",
+    "categoryId": "hot",
+    "name": "Суп сливочный с кукурузой и креветками терияки",
+    "description": "Суп сливочный с кукурузой и креветками терияки",
+    "composition": "Суп сливочный с кукурузой и креветками терияки",
+    "weight": "285 г",
+    "price": 550,
+    "image": "/images/1006055.webp",
+    "popular": false,
+    "fresh": false
+  },
+  {
+    "id": "1006044",
+    "categoryId": "hot",
+    "name": "Боул Сытный",
+    "description": "Свинина томленая в соусе демиглас, картофельные дольки, помидор свежий, маринованный огурец, микс зелени, красный лук",
+    "composition": "Свинина томленая в соусе демиглас, картофельные дольки, помидор свежий, маринованный огурец, микс зелени, красный лук",
+    "weight": "300 г",
+    "price": 580,
+    "image": "/images/1006044.webp",
+    "popular": false,
+    "fresh": false
+  },
+  {
+    "id": "1006031",
+    "categoryId": "hot",
+    "name": "Боул с лососем, лапшой из цукини, овощным гарниром и соусами",
+    "description": "Лосось, цукини, микс зелени, огурец свежий, кукуруза консервированная, заправка азиатская, чука, унаги, спайс",
+    "composition": "Лосось, цукини, микс зелени, огурец свежий, кукуруза консервированная, заправка азиатская, чука, унаги, спайс",
+    "weight": "350 г",
+    "price": 600,
+    "image": "/images/1006031.webp",
+    "popular": false,
+    "fresh": false
+  },
+  {
+    "id": "1003731",
+    "categoryId": "breakfast",
+    "name": "Завтрак с лососем, яйцами пашот, картофелем по-деревенски и овощами",
+    "description": "Завтрак с лососем, яйцами пашот, картофелем по-деревенски и овощами",
+    "composition": "Завтрак с лососем, яйцами пашот, картофелем по-деревенски и овощами",
+    "weight": "300 г",
+    "price": 620,
+    "image": "/images/1003731.webp",
+    "popular": false,
+    "fresh": false
+  },
+  {
+    "id": "992266",
+    "categoryId": "sweet",
+    "name": "Мадлены",
+    "description": "Бисквитное печенье на основе фисташковой пасты,покрывается шоколадной глазурью с разными начинками",
+    "composition": "Бисквитное печенье на основе фисташковой пасты,покрывается шоколадной глазурью с разными начинками",
+    "weight": "1шт",
+    "price": 100,
+    "image": "/images/992266.webp",
+    "popular": false,
+    "fresh": false
+  },
+  {
+    "id": "992236",
+    "categoryId": "sweet",
+    "name": "Вишня-шоколад",
+    "description": "Шоколадный бисквит/крем чиз/карамельная вишня/шоколадный ганаш",
+    "composition": "Шоколадный бисквит/крем чиз/карамельная вишня/шоколадный ганаш",
+    "weight": "160 г",
+    "price": 350,
+    "image": "/images/992236.webp",
+    "popular": false,
+    "fresh": false
+  },
+  {
+    "id": "992228",
+    "categoryId": "croissants",
+    "name": "Круассан «Апельсин»",
+    "description": "Крем апельсиновый фреш/ пюре апельсина",
+    "composition": "Крем апельсиновый фреш/ пюре апельсина",
+    "weight": "1 шт",
+    "price": 350,
+    "image": "/images/992228.webp",
+    "popular": false,
+    "fresh": true
+  },
+  {
+    "id": "992229",
+    "categoryId": "croissants",
+    "name": "Круассан «Кокос»",
+    "description": "Кокосовая паста/кокосовая стружка",
+    "composition": "Кокосовая паста/кокосовая стружка",
+    "weight": "1 шт",
+    "price": 350,
+    "image": "/images/992229.webp",
+    "popular": false,
+    "fresh": true
+  },
+  {
+    "id": "992231",
+    "categoryId": "croissants",
+    "name": "Круассан «Тирамису»",
+    "description": "Кофейная паста/кофейный крем чиз/какао",
+    "composition": "Кофейная паста/кофейный крем чиз/какао",
+    "weight": "1 шт",
+    "price": 350,
+    "image": "/images/992231.webp",
+    "popular": false,
+    "fresh": true
+  },
+  {
+    "id": "992234",
+    "categoryId": "sweet",
+    "name": "Куб карамельный",
+    "description": "Заварной крем/соленая карамель",
+    "composition": "Заварной крем/соленая карамель",
+    "weight": "1 шт",
+    "price": 350,
+    "image": "/images/992234.webp",
+    "popular": false,
+    "fresh": false
+  },
+  {
+    "id": "992235",
+    "categoryId": "sweet",
+    "name": "Тирамису лимон",
+    "description": "Печенье савоярди/крем чиз/лимонный курд/цукаты",
+    "composition": "Печенье савоярди/крем чиз/лимонный курд/цукаты",
+    "weight": "165 г",
+    "price": 350,
+    "image": "/images/992235.webp",
+    "popular": false,
+    "fresh": false
+  },
+  {
+    "id": "mock-cappuccino",
+    "categoryId": "coffee",
+    "name": "Капучино",
+    "description": "Эспрессо и нежная молочная пена",
+    "composition": "Эспрессо, молоко",
+    "weight": "250 мл",
+    "price": 230,
+    "image": "/images/cappuccino.webp",
+    "popular": true,
+    "variants": [
+      {
+        "id": "small",
+        "name": "250 мл",
+        "priceDelta": 0
+      },
+      {
+        "id": "large",
+        "name": "350 мл",
+        "priceDelta": 70
+      }
+    ],
+    "modifiers": [
+      {
+        "id": "milk",
+        "name": "Молоко",
+        "options": [
+          {
+            "id": "regular",
+            "name": "Обычное",
+            "priceDelta": 0
+          },
+          {
+            "id": "oat",
+            "name": "Овсяное",
+            "priceDelta": 60
+          }
+        ]
+      },
+      {
+        "id": "syrup",
+        "name": "Сироп",
+        "options": [
+          {
+            "id": "none",
+            "name": "Без сиропа",
+            "priceDelta": 0
+          },
+          {
+            "id": "vanilla",
+            "name": "Ванильный",
+            "priceDelta": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mock-latte",
+    "categoryId": "coffee",
+    "name": "Латте",
+    "description": "Мягкий кофе с молоком",
+    "composition": "Эспрессо, молоко",
+    "weight": "350 мл",
+    "price": 260,
+    "image": "/images/cappuccino.webp",
+    "variants": [
+      {
+        "id": "regular",
+        "name": "350 мл",
+        "priceDelta": 0
+      },
+      {
+        "id": "large",
+        "name": "450 мл",
+        "priceDelta": 70
+      }
+    ]
+  }
+]
