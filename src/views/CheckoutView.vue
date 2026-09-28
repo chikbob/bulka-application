@@ -11,7 +11,7 @@ import { useAuthStore } from '../stores/auth'
 import { useOrdersStore } from '../stores/orders'
 import { useLoyaltyStore } from '../stores/loyalty'
 import type { Order, OrderItem } from '../types'
-import { money } from '../utils'
+import { demoId, money } from '../utils'
 const router = useRouter()
 const cart = useCartStore()
 const catalog = useCatalogStore()
@@ -64,7 +64,7 @@ async function submit() {
     }))
     const number = Math.max(123, ...orders.orders.map((item) => item.number)) + 1
     const order: Order = {
-      id: crypto.randomUUID(),
+      id: demoId(),
       number,
       items,
       total: due.value,

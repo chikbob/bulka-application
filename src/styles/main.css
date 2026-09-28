@@ -63,12 +63,18 @@ ion-app {
 }
 .app-shell {
   position: relative;
-  min-height: 100vh;
+  width: 100%;
+  min-width: 0;
+  height: 100vh;
+  height: 100dvh;
   max-width: 500px;
   margin: auto;
   background: var(--cream);
   box-shadow: 0 0 60px #29201618;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  -webkit-overflow-scrolling: touch;
 }
 .screen {
   min-height: 100vh;

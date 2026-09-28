@@ -1,0 +1,5 @@
+node_modules/
+dist/
+ios/
+public/images/
+public/apple-touch-icon.png

@@ -64,7 +64,7 @@ function repeatOrder() {
       </div>
       <div class="usual-card">
         <div class="usual-images">
-          <img :src="repeat?.items[0]?.image || '/images/992233.webp'" alt="" /><img
+          <img :src="repeat?.items[0]?.image || '/images/992233-enhanced.webp'" alt="" /><img
             :src="repeat?.items[1]?.image || '/images/cappuccino.webp'"
             alt=""
           />
@@ -127,7 +127,7 @@ function repeatOrder() {
         </div>
       </div>
       <router-link to="/product/992233" class="fresh-feature"
-        ><img src="/images/992233.webp" alt="Круассан Фисташка" />
+        ><img src="/images/992233-enhanced.webp" alt="Круассан Фисташка" />
         <div>
           <span class="eyebrow">ХРУСТЯЩИЙ ФАВОРИТ</span>
           <h3>Круассан<br />«Фисташка»</h3>

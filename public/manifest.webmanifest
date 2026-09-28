@@ -1,0 +1,11 @@
+{
+  "name": "Булка — кафе в Мариуполе",
+  "short_name": "Булка",
+  "description": "Быстрый заказ и самовывоз в кафе Булка",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#faf7f2",
+  "theme_color": "#faf7f2",
+  "icons": [{ "src": "/apple-touch-icon.png", "sizes": "512x512", "type": "image/png" }]
+}

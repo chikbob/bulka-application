@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onMounted } from 'vue'
+import { computed, nextTick, onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { IonApp, IonIcon } from '@ionic/vue'
 import { homeOutline, restaurantOutline, receiptOutline, personOutline } from 'ionicons/icons'
@@ -19,6 +19,14 @@ const nav = [
   { path: '/profile', label: 'Профиль', icon: personOutline },
 ]
 const showNav = computed(() => nav.some((item) => item.path === route.path))
+watch(
+  () => route.fullPath,
+  async () => {
+    await nextTick()
+    const shell = document.querySelector<HTMLElement>('.app-shell')
+    if (shell) shell.scrollTop = 0
+  },
+)
 onMounted(async () => {
   await Promise.all([
     useCatalogStore().load(),

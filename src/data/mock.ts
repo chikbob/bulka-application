@@ -36,7 +36,7 @@ export const promotions: Promotion[] = [
     eyebrow: 'СЛАДКИЙ МОМЕНТ',
     title: 'Выбери десерт к кофе',
     description: 'Моти, круассаны и любимые сладости',
-    image: '/images/992267.webp',
+    image: '/images/992267-enhanced.webp',
     background: '#f1e9e9',
   },
 ]

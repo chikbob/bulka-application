@@ -7,7 +7,7 @@
     "composition": "Творожный сыр, сливки, сахарная пудра, рисовое тесто, ягодная начинка",
     "weight": "1 шт",
     "price": 200,
-    "image": "/images/992267.webp",
+    "image": "/images/992267-enhanced.webp",
     "popular": true,
     "fresh": false
   },
@@ -43,7 +43,7 @@
     "composition": "Фисташковый крем/конфитюр малина -клубника",
     "weight": "1 шт",
     "price": 350,
-    "image": "/images/992233.webp",
+    "image": "/images/992233-enhanced.webp",
     "popular": true,
     "fresh": true
   },
@@ -55,7 +55,7 @@
     "composition": "Шоколадный ганаш/арахис",
     "weight": "1 шт",
     "price": 350,
-    "image": "/images/992232.webp",
+    "image": "/images/992232-enhanced.webp",
     "popular": true,
     "fresh": true
   },
@@ -115,7 +115,7 @@
     "composition": "Основа пшеничная, томатный соус, сыр моцарелла",
     "weight": "400 г",
     "price": 450,
-    "image": "/images/1006687.webp",
+    "image": "/images/1006687-enhanced.webp",
     "popular": true,
     "fresh": false
   },
@@ -127,7 +127,7 @@
     "composition": "Основа пшеничная, томатный соус, сыр моцарелла, пепперони",
     "weight": "400 г",
     "price": 550,
-    "image": "/images/1006686.webp",
+    "image": "/images/1006686-enhanced.webp",
     "popular": true,
     "fresh": false
   },
@@ -271,7 +271,7 @@
     "composition": "Сырники с вишней и сметаной",
     "weight": "150/60 г",
     "price": 350,
-    "image": "/images/1006038.webp",
+    "image": "/images/1006038-enhanced.webp",
     "popular": true,
     "fresh": false
   },
@@ -307,7 +307,7 @@
     "composition": "Курица запеченная/крем чиз/микс зелени/огурец марин./помидор свежий/соус унаги или спайс",
     "weight": "200г",
     "price": 400,
-    "image": "/images/1006049.webp",
+    "image": "/images/1006049-enhanced.webp",
     "popular": true,
     "fresh": true
   },
@@ -391,7 +391,7 @@
     "composition": "Яичная лапша/креветки/том ям паста/сливки",
     "weight": "250г",
     "price": 500,
-    "image": "/images/992251.webp",
+    "image": "/images/992251-enhanced.webp",
     "popular": true,
     "fresh": false
   },
