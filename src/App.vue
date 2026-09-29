@@ -46,6 +46,9 @@ onMounted(async () => {
       ></router-view>
       <CartBar v-if="showNav" />
       <nav v-if="showNav" class="bottom-nav" aria-label="Основная навигация">
+        <router-link to="/" class="desktop-brand" aria-label="Булка — главная">
+          <img src="/images/logo-horizontal.png" alt="" />
+        </router-link>
         <router-link
           v-for="item in nav"
           :key="item.path"

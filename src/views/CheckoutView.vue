@@ -116,6 +116,7 @@ async function submit() {
       <h2>Заберёшь<br />свою Булку?</h2>
       <p>Пара деталей — и мы начнём готовить</p>
     </div>
+    <p class="demo-banner">Демо-версия · заказ сохранится только на этом устройстве</p>
     <section class="form-section">
       <div class="step-heading">
         <span>01</span>

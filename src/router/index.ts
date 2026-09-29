@@ -1,8 +1,11 @@
-import { createRouter, createWebHistory } from '@ionic/vue-router'
+import { createRouter, createWebHashHistory, createWebHistory } from '@ionic/vue-router'
 import HomeView from '../views/HomeView.vue'
 
 export default createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history:
+    import.meta.env.VITE_ROUTER_MODE === 'hash'
+      ? createWebHashHistory(import.meta.env.BASE_URL)
+      : createWebHistory(import.meta.env.BASE_URL),
   routes: [
     { path: '/', component: HomeView },
     { path: '/menu', component: () => import('../views/MenuView.vue') },
