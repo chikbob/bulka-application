@@ -1,5 +1,6 @@
 node_modules/
 dist/
+bulka-site-beget.zip
 build/
 .env
 .env.*

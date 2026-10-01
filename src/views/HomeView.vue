@@ -66,7 +66,7 @@ function repeatOrder() {
       <div class="usual-card">
         <div class="usual-images">
           <img :src="repeat?.items[0]?.image || '/images/992233-enhanced.webp'" alt="" /><img
-            :src="repeat?.items[1]?.image || '/images/cappuccino.webp'"
+            :src="repeat?.items[1]?.image || '/images/coffee-cappuccino.webp'"
             alt=""
           />
         </div>
