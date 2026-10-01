@@ -4,14 +4,14 @@ import type { Product } from '../types'
 
 export const products = productsJson as Product[]
 export const categories: Category[] = [
-  { id: 'popular', name: 'Популярное', emoji: '✦' },
-  { id: 'breakfast', name: 'Завтраки', emoji: '☀' },
+  { id: 'popular', name: 'Популярное', emoji: '✨' },
+  { id: 'breakfast', name: 'Завтраки', emoji: '🍳' },
   { id: 'croissants', name: 'Круассаны', emoji: '🥐' },
-  { id: 'sweet', name: 'Сладкое', emoji: '♡' },
+  { id: 'sweet', name: 'Сладкое', emoji: '🍰' },
   { id: 'pizza', name: 'Пицца', emoji: '🍕' },
-  { id: 'hot', name: 'Горячее', emoji: '♨' },
+  { id: 'hot', name: 'Горячее', emoji: '🍲' },
   { id: 'coffee', name: 'Кофе', emoji: '☕' },
-  { id: 'drinks', name: 'Напитки', emoji: '◉' },
+  { id: 'drinks', name: 'Напитки', emoji: '🧃' },
 ]
 export const stores: Store[] = [
   {

@@ -5,7 +5,7 @@ defineEmits<{ select: [id: string] }>()
 </script>
 <template>
   <button class="category-chip" :class="{ active }" @click="$emit('select', category.id)">
-    <span>{{ category.emoji }}</span
+    <span class="category-chip__emoji" aria-hidden="true">{{ category.emoji }}</span
     >{{ category.name }}
   </button>
 </template>
