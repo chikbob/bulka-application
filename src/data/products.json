@@ -19,7 +19,7 @@
     "composition": "Сок в ассортименте",
     "weight": "300 мл",
     "price": 200,
-    "image": "/images/992287-upscaled.webp",
+    "image": "/images/992287-restored.webp",
     "popular": false,
     "fresh": false
   },
@@ -31,7 +31,7 @@
     "composition": "Заварной крем/конфитюр клубника",
     "weight": "1 шт",
     "price": 350,
-    "image": "/images/992230-upscaled.webp",
+    "image": "/images/992230-restored.webp",
     "popular": false,
     "fresh": true
   },
@@ -67,7 +67,7 @@
     "composition": "Шоколадный бисквит/крем чиз/соленая карамель/шоколадный ганаш/арахис",
     "weight": "270 г",
     "price": 350,
-    "image": "/images/992239-upscaled.webp",
+    "image": "/images/992239-restored.webp",
     "popular": false,
     "fresh": false
   },
@@ -79,7 +79,7 @@
     "composition": "Шоколадный бисквит/банан/клубничный/крем чиз/шоколадный ганаш",
     "weight": "180 г",
     "price": 350,
-    "image": "/images/992237-upscaled.webp",
+    "image": "/images/992237-restored.webp",
     "popular": false,
     "fresh": false
   },
@@ -91,7 +91,7 @@
     "composition": "Лапша с томленым мясом в соусе демиглас",
     "weight": "340г",
     "price": 500,
-    "image": "/images/992250-upscaled.webp",
+    "image": "/images/992250-restored.webp",
     "popular": false,
     "fresh": false
   },
@@ -103,7 +103,7 @@
     "composition": "Шоколадный бисквит/катаифи/фисташковый крем/шоколадный ганаш/фисташка",
     "weight": "270 г",
     "price": 550,
-    "image": "/images/992240-upscaled.webp",
+    "image": "/images/992240-restored.webp",
     "popular": false,
     "fresh": false
   },
@@ -187,7 +187,7 @@
     "composition": "Картофельные дольки с соусом спайс",
     "weight": "100/30 г",
     "price": 200,
-    "image": "/images/1006039-upscaled.webp",
+    "image": "/images/1006039-restored.webp",
     "popular": false,
     "fresh": false
   },
@@ -199,7 +199,7 @@
     "composition": "Наггетсы куриные с соусом свит чили",
     "weight": "100/30 г",
     "price": 200,
-    "image": "/images/1006040-upscaled.webp",
+    "image": "/images/1006040-restored.webp",
     "popular": false,
     "fresh": false
   },
@@ -211,7 +211,7 @@
     "composition": "Каша овсяная с вишней и фисташковой пастой",
     "weight": "250 г",
     "price": 300,
-    "image": "/images/1006043-upscaled.webp",
+    "image": "/images/1006043-restored.webp",
     "popular": false,
     "fresh": false
   },
@@ -223,7 +223,7 @@
     "composition": "Каша овсяная с пармезаном и яйцом пашот",
     "weight": "250 г",
     "price": 300,
-    "image": "/images/1006042-upscaled.webp",
+    "image": "/images/1006042-restored.webp",
     "popular": false,
     "fresh": false
   },
@@ -235,7 +235,7 @@
     "composition": "Сырные палочки с вишней и сметаной",
     "weight": "100/60 г",
     "price": 300,
-    "image": "/images/1006041-upscaled.webp",
+    "image": "/images/1006041-restored.webp",
     "popular": false,
     "fresh": false
   },
@@ -247,7 +247,7 @@
     "composition": "Хлеб тостовый/крем чиз/микс зелени/курица запеченная/помидор свежий/огурец маринован/унаги/сырный",
     "weight": "190 г",
     "price": 300,
-    "image": "/images/1006047-upscaled.webp",
+    "image": "/images/1006047-restored.webp",
     "popular": false,
     "fresh": false
   },
@@ -259,7 +259,7 @@
     "composition": "Сэндвич с тунцом",
     "weight": "190 г",
     "price": 300,
-    "image": "/images/1006046-upscaled.webp",
+    "image": "/images/1006046-restored.webp",
     "popular": false,
     "fresh": false
   },
@@ -283,7 +283,7 @@
     "composition": "Хлеб тостовый/крем чиз/микс зелени/лосось с/сол/свежий огурец/унаги",
     "weight": "175г",
     "price": 350,
-    "image": "/images/1006048-upscaled.webp",
+    "image": "/images/1006048-restored.webp",
     "popular": false,
     "fresh": false
   },
@@ -295,7 +295,7 @@
     "composition": "Подается с овощным гарниром: свежими и вялеными томатами",
     "weight": "180/60 г",
     "price": 380,
-    "image": "/images/1006035-upscaled.webp",
+    "image": "/images/1006035-restored.webp",
     "popular": false,
     "fresh": false
   },
@@ -319,7 +319,7 @@
     "composition": "Тунец консервированный, творожный сыр, вяленые томаты, маринованный огурец, лист салата, соус унаги и спайс",
     "weight": "200 г",
     "price": 400,
-    "image": "/images/1006032-upscaled.webp",
+    "image": "/images/1006032-restored.webp",
     "popular": false,
     "fresh": true
   },
@@ -331,7 +331,7 @@
     "composition": "Креветки/свежий огурец/микс зелени/крем чиз/унаги",
     "weight": "190г",
     "price": 450,
-    "image": "/images/1006053-upscaled.webp",
+    "image": "/images/1006053-restored.webp",
     "popular": false,
     "fresh": true
   },
@@ -343,7 +343,7 @@
     "composition": "Лосось с/с/свежий огурец/микс зелени/крем чиз/унаги",
     "weight": "240г",
     "price": 450,
-    "image": "/images/1006054-upscaled.webp",
+    "image": "/images/1006054-restored.webp",
     "popular": false,
     "fresh": true
   },
@@ -355,7 +355,7 @@
     "composition": "Мясо томленое/крем чиз/микс зелени/огурец марин./лук красный/соус унаги/барбекю",
     "weight": "230г",
     "price": 450,
-    "image": "/images/1006052-upscaled.webp",
+    "image": "/images/1006052-restored.webp",
     "popular": false,
     "fresh": true
   },
@@ -367,7 +367,7 @@
     "composition": "Подается с овощным гарниром: маринованным огурцом, сыром и красным луком",
     "weight": "200/60 г",
     "price": 450,
-    "image": "/images/1006036-upscaled.webp",
+    "image": "/images/1006036-restored.webp",
     "popular": false,
     "fresh": false
   },
@@ -379,7 +379,7 @@
     "composition": "Подается с овощным гарниром: маринованным огурцом, отварным яйцом, творожным сыром и красным луком",
     "weight": "180/60 г",
     "price": 450,
-    "image": "/images/1006037-upscaled.webp",
+    "image": "/images/1006037-restored.webp",
     "popular": false,
     "fresh": false
   },
@@ -403,7 +403,7 @@
     "composition": "Суп с лапшой и курицей панко",
     "weight": "500 г",
     "price": 500,
-    "image": "/images/1003734-upscaled.webp",
+    "image": "/images/1003734-restored.webp",
     "popular": false,
     "fresh": false
   },
@@ -415,7 +415,7 @@
     "composition": "Завтрак с охотничьими колбасками, картофелем по-деревенски, глазуньей и овощами",
     "weight": "300 г",
     "price": 550,
-    "image": "/images/1003730-upscaled.webp",
+    "image": "/images/1003730-restored.webp",
     "popular": false,
     "fresh": false
   },
@@ -427,7 +427,7 @@
     "composition": "Пшеничная лапша, курица в панировке из сухарей, сливки, сыр чеддер, сыр пармезан",
     "weight": "280 г",
     "price": 550,
-    "image": "/images/1006045-upscaled.webp",
+    "image": "/images/1006045-restored.webp",
     "popular": false,
     "fresh": false
   },
@@ -439,7 +439,7 @@
     "composition": "Суп сливочный с кукурузой и креветками терияки",
     "weight": "285 г",
     "price": 550,
-    "image": "/images/1006055-upscaled.webp",
+    "image": "/images/1006055-restored.webp",
     "popular": false,
     "fresh": false
   },
@@ -451,7 +451,7 @@
     "composition": "Свинина томленая в соусе демиглас, картофельные дольки, помидор свежий, маринованный огурец, микс зелени, красный лук",
     "weight": "300 г",
     "price": 580,
-    "image": "/images/1006044-upscaled.webp",
+    "image": "/images/1006044-restored.webp",
     "popular": false,
     "fresh": false
   },
@@ -463,7 +463,7 @@
     "composition": "Лосось, цукини, микс зелени, огурец свежий, кукуруза консервированная, заправка азиатская, чука, унаги, спайс",
     "weight": "350 г",
     "price": 600,
-    "image": "/images/1006031-upscaled.webp",
+    "image": "/images/1006031-restored.webp",
     "popular": false,
     "fresh": false
   },
@@ -475,7 +475,7 @@
     "composition": "Завтрак с лососем, яйцами пашот, картофелем по-деревенски и овощами",
     "weight": "300 г",
     "price": 620,
-    "image": "/images/1003731-upscaled.webp",
+    "image": "/images/1003731-restored.webp",
     "popular": false,
     "fresh": false
   },
@@ -487,7 +487,7 @@
     "composition": "Бисквитное печенье на основе фисташковой пасты,покрывается шоколадной глазурью с разными начинками",
     "weight": "1шт",
     "price": 100,
-    "image": "/images/992266-upscaled.webp",
+    "image": "/images/992266-restored.webp",
     "popular": false,
     "fresh": false
   },
@@ -499,7 +499,7 @@
     "composition": "Шоколадный бисквит/крем чиз/карамельная вишня/шоколадный ганаш",
     "weight": "160 г",
     "price": 350,
-    "image": "/images/992236-upscaled.webp",
+    "image": "/images/992236-restored.webp",
     "popular": false,
     "fresh": false
   },
@@ -511,7 +511,7 @@
     "composition": "Крем апельсиновый фреш/ пюре апельсина",
     "weight": "1 шт",
     "price": 350,
-    "image": "/images/992228-upscaled.webp",
+    "image": "/images/992228-restored.webp",
     "popular": false,
     "fresh": true
   },
@@ -523,7 +523,7 @@
     "composition": "Кокосовая паста/кокосовая стружка",
     "weight": "1 шт",
     "price": 350,
-    "image": "/images/992229-upscaled.webp",
+    "image": "/images/992229-restored.webp",
     "popular": false,
     "fresh": true
   },
@@ -535,7 +535,7 @@
     "composition": "Кофейная паста/кофейный крем чиз/какао",
     "weight": "1 шт",
     "price": 350,
-    "image": "/images/992231-upscaled.webp",
+    "image": "/images/992231-restored.webp",
     "popular": false,
     "fresh": true
   },
@@ -547,7 +547,7 @@
     "composition": "Заварной крем/соленая карамель",
     "weight": "1 шт",
     "price": 350,
-    "image": "/images/992234-upscaled.webp",
+    "image": "/images/992234-restored.webp",
     "popular": false,
     "fresh": false
   },
@@ -559,7 +559,7 @@
     "composition": "Печенье савоярди/крем чиз/лимонный курд/цукаты",
     "weight": "165 г",
     "price": 350,
-    "image": "/images/992235-upscaled.webp",
+    "image": "/images/992235-restored.webp",
     "popular": false,
     "fresh": false
   },

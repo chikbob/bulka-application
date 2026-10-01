@@ -44,7 +44,7 @@ onMounted(async () => {
       <router-view v-slot="{ Component }"
         ><transition name="page" mode="out-in"><component :is="Component" /></transition
       ></router-view>
-      <CartBar v-if="showNav" />
+      <div v-if="showNav" class="mobile-cart"><CartBar /></div>
       <nav v-if="showNav" class="bottom-nav" aria-label="Основная навигация">
         <router-link to="/" class="desktop-brand" aria-label="Булка — главная">
           <img src="/images/logo-horizontal.png" alt="" />
@@ -58,6 +58,7 @@ onMounted(async () => {
         >
           <ion-icon :icon="item.icon" /><span>{{ item.label }}</span>
         </router-link>
+        <CartBar class="desktop-cart" />
       </nav>
       <div v-if="app.toast" class="toast" role="status">{{ app.toast }}</div>
     </main>

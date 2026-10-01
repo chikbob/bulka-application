@@ -729,6 +729,9 @@ ion-app {
   color: #fff;
   font-size: 17px;
 }
+.desktop-cart {
+  display: none;
+}
 .toast {
   position: fixed;
   z-index: 30;
@@ -1778,6 +1781,41 @@ ion-app {
     gap: 8px;
     box-shadow: 0 8px 28px #2920160b;
   }
+  .mobile-cart {
+    display: none;
+  }
+  .desktop-cart {
+    position: static;
+    display: flex;
+    width: auto;
+    min-height: 44px;
+    padding: 5px 8px;
+    gap: 8px;
+    transform: none;
+    border-radius: 12px;
+    box-shadow: none;
+  }
+  .desktop-cart:hover {
+    transform: none;
+    box-shadow: none;
+    background: #fff6f2;
+  }
+  .desktop-cart .cart-bar-icon {
+    width: 31px;
+    height: 31px;
+    flex-basis: 31px;
+    border-radius: 9px;
+  }
+  .desktop-cart .cart-bar-icon ion-icon {
+    font-size: 18px;
+  }
+  .desktop-cart .cart-bar-copy,
+  .desktop-cart .cart-bar-arrow {
+    display: none;
+  }
+  .desktop-cart .cart-bar-total {
+    font-size: 13px;
+  }
   .desktop-brand {
     display: flex;
     align-items: center;
@@ -1887,19 +1925,6 @@ ion-app {
     border: 1px solid var(--line);
     border-radius: 18px;
     box-shadow: 0 12px 40px #251e1620;
-  }
-  .cart-bar {
-    width: 286px;
-    min-height: 70px;
-    top: auto;
-    bottom: 28px;
-    left: auto;
-    right: max(32px, calc((100vw - 1184px) / 2));
-    transform: none;
-  }
-  .cart-bar:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 18px 42px #2c1e1730;
   }
   .fresh-feature {
     height: 380px;
