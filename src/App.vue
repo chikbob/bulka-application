@@ -2,7 +2,13 @@
 import { computed, nextTick, onMounted, onUnmounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { IonApp, IonIcon } from '@ionic/vue'
-import { homeOutline, restaurantOutline, receiptOutline, personOutline } from 'ionicons/icons'
+import {
+  homeOutline,
+  restaurantOutline,
+  heartOutline,
+  receiptOutline,
+  personOutline,
+} from 'ionicons/icons'
 import CartBar from './components/CartBar.vue'
 import { useAppStore } from './stores/app'
 import { useCatalogStore } from './stores/catalog'
@@ -13,6 +19,7 @@ const app = useAppStore()
 const nav = [
   { path: '/', label: 'Главная', icon: homeOutline },
   { path: '/menu', label: 'Меню', icon: restaurantOutline },
+  { path: '/favorites', label: 'Любимое', icon: heartOutline },
   { path: '/orders', label: 'Заказы', icon: receiptOutline },
   { path: '/profile', label: 'Профиль', icon: personOutline },
 ]
@@ -29,15 +36,20 @@ let syncTimer: ReturnType<typeof setInterval> | undefined
 const sync = () => {
   if (document.visibilityState === 'visible') void useAuthStore().load()
 }
+const syncAcrossTabs = (event: StorageEvent) => {
+  if (event.key === 'bulka.session-profile.v2') void useAuthStore().load()
+}
 onUnmounted(() => {
   clearInterval(syncTimer)
   document.removeEventListener('visibilitychange', sync)
   window.removeEventListener('online', sync)
+  window.removeEventListener('storage', syncAcrossTabs)
 })
 onMounted(async () => {
   syncTimer = setInterval(sync, 30000)
   document.addEventListener('visibilitychange', sync)
   window.addEventListener('online', sync)
+  window.addEventListener('storage', syncAcrossTabs)
   await Promise.all([useCatalogStore().load(), app.load(), useAuthStore().load()])
 })
 </script>

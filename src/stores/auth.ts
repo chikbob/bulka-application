@@ -12,7 +12,9 @@ export const useAuthStore = defineStore('auth', () => {
   const authenticated = computed(() => !!user.value.id)
   const ready = ref(false)
   const syncError = ref('')
+  const changingSession = ref(false)
   let generation = 0
+  let loadSequence = 0
   async function switchUser(value: User | null) {
     const changed = user.value.id !== value?.id
     user.value = value || { ...initialUser }
@@ -37,7 +39,9 @@ export const useAuthStore = defineStore('auth', () => {
         : ''
   }
   async function load() {
+    if (changingSession.value) return
     const attempt = generation
+    const sequence = ++loadSequence
     if (!ready.value) {
       useOrdersStore().reset()
       useLoyaltyStore().reset()
@@ -45,9 +49,9 @@ export const useAuthStore = defineStore('auth', () => {
     }
     try {
       const result = await authService.current()
-      if (attempt === generation) await switchUser(result.user)
+      if (attempt === generation && sequence === loadSequence) await switchUser(result.user)
     } catch {
-      if (attempt === generation) {
+      if (attempt === generation && sequence === loadSequence) {
         await refresh()
         syncError.value = 'Нет связи с сервером. Доступны сохранённые данные.'
       }
@@ -55,26 +59,52 @@ export const useAuthStore = defineStore('auth', () => {
       ready.value = true
     }
   }
-  async function login(email: string, password: string) {
+  async function changeSession(operation: () => Promise<User | null>) {
+    if (changingSession.value) throw new Error('Дождитесь завершения текущего действия')
+    changingSession.value = true
     generation += 1
-    const result = await authService.login(email, password)
-    await switchUser(result.user)
+    try {
+      const value = await operation()
+      generation += 1
+      await switchUser(value)
+    } finally {
+      generation += 1
+      changingSession.value = false
+    }
+  }
+  async function login(email: string, password: string) {
+    await changeSession(async () => (await authService.login(email, password)).user)
   }
   async function register(name: string, email: string, password: string) {
-    generation += 1
     const favorites = storageGet<string[]>('bulka.favorites.v1', [])
-    const result = await authService.register({ name, email, password, favorites })
-    await switchUser(result.user)
+    await changeSession(
+      async () => (await authService.register({ name, email, password, favorites })).user,
+    )
   }
   async function save(value: User) {
+    const attempt = generation
     const result = await authService.update(value)
+    if (attempt !== generation || changingSession.value) return
     user.value = result.user
     storageSet('bulka.session-profile.v2', user.value)
   }
   async function signOut() {
-    generation += 1
-    await authService.signOut()
-    await switchUser(null)
+    await changeSession(async () => {
+      await authService.signOut()
+      return null
+    })
   }
-  return { user, authenticated, ready, syncError, load, login, register, save, signOut, refresh }
+  return {
+    user,
+    authenticated,
+    ready,
+    changingSession,
+    syncError,
+    load,
+    login,
+    register,
+    save,
+    signOut,
+    refresh,
+  }
 })

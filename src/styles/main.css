@@ -639,7 +639,8 @@ ion-app {
   justify-content: center;
   align-items: center;
   gap: 3px;
-  min-width: 68px;
+  flex: 1 1 0;
+  min-width: 0;
   color: #8b857f;
   font-size: 10px;
   font-weight: 700;
@@ -1827,6 +1828,7 @@ ion-app {
     height: auto;
   }
   .nav-item {
+    flex: 0 0 auto;
     flex-direction: row;
     gap: 8px;
     min-width: 0;
@@ -2143,4 +2145,21 @@ button:disabled {
 .auth-panel .password-field button {
   background: transparent;
   border: 0;
+}
+
+@media (min-width: 700px) and (max-width: 999px) {
+  .bottom-nav {
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 4px;
+  }
+  .desktop-brand img {
+    width: 92px;
+  }
+  .nav-item {
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px 10px;
+    font-size: 11px;
+  }
 }

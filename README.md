@@ -46,6 +46,7 @@ npx vercel dev --listen 3001
 npm run lint
 npm run typecheck
 npm run build
+node --test scripts/auth-session.test.mjs
 node --env-file=.env.local --test scripts/accounts.test.mjs
 ```
 
