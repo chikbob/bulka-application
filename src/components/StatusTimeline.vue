@@ -2,7 +2,7 @@
 import type { OrderStatus } from '../types'
 const props = defineProps<{ status: OrderStatus }>()
 const statuses: { key: OrderStatus; label: string; caption: string }[] = [
-  { key: 'accepted', label: 'Принят', caption: 'Заказ у нас' },
+  { key: 'accepted', label: 'Оформлен', caption: 'Ожидает подтверждения кафе' },
   { key: 'preparing', label: 'Готовим', caption: 'Уже на кухне' },
   { key: 'ready', label: 'Готов', caption: 'Можно забирать' },
   { key: 'received', label: 'Получен', caption: 'Приятного аппетита' },

@@ -4,6 +4,8 @@ import { IonIcon } from '@ionic/vue'
 import { arrowBackOutline } from 'ionicons/icons'
 import { useLoyaltyStore } from '../stores/loyalty'
 import { formatDate } from '../utils'
+import { useAuthStore } from '../stores/auth'
+const auth = useAuthStore()
 const router = useRouter()
 const loyalty = useLoyaltyStore()
 </script>
@@ -16,7 +18,14 @@ const loyalty = useLoyaltyStore()
       <h1>Булочки</h1>
       <span>Бонусы</span>
     </header>
-    <div class="loyalty-hero">
+    <section v-if="!auth.authenticated" class="account-invite">
+      <h2>Булочки ждут знакомства</h2>
+      <p>Войди или зарегистрируйся, чтобы копить бонусы и использовать их при заказе.</p>
+      <router-link to="/auth?next=/loyalty" class="primary-button"
+        >Войти или зарегистрироваться →</router-link
+      >
+    </section>
+    <div v-else class="loyalty-hero">
       <span class="eyebrow">ТВОЙ БАЛАНС</span>
       <div class="balance-number">{{ loyalty.balance }}<span>✳</span></div>
       <h2>булочек</h2>
@@ -33,7 +42,7 @@ const loyalty = useLoyaltyStore()
         <span>01</span>
         <div>
           <strong>Заказывай любимое</strong>
-          <p>Возвращаем 5% от стоимости заказа булочками.</p>
+          <p>Начисляем 5% после получения заказа и подтверждения оплаты в кафе.</p>
         </div>
       </div>
       <div class="info-card">
@@ -44,7 +53,10 @@ const loyalty = useLoyaltyStore()
         </div>
       </div>
     </section>
-    <section class="section">
+    <section v-if="auth.authenticated" class="section">
+      <p v-if="!loyalty.transactions.length" class="field-hint">
+        Здесь появятся начисления и списания булочек.
+      </p>
       <div class="section-heading">
         <div>
           <span class="eyebrow">ИСТОРИЯ</span>

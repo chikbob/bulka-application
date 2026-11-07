@@ -29,14 +29,7 @@ const minutes = computed(() =>
     ? Math.max(0, Math.ceil((new Date(order.value.pickupTime).getTime() - now.value) / 60000))
     : 0,
 )
-const displayStatus = computed(() =>
-  order.value?.status === 'preparing' && minutes.value === 0
-    ? 'ready'
-    : order.value?.status || 'accepted',
-)
-async function receive() {
-  if (order.value) await orders.update({ ...order.value, status: 'received' })
-}
+const displayStatus = computed(() => order.value?.status || 'accepted')
 function repeat() {
   if (!order.value) return
   for (const item of order.value.items) {
@@ -66,10 +59,16 @@ function repeat() {
             ? 'Твоя Булка готова'
             : displayStatus === 'received'
               ? 'Приятного аппетита!'
-              : 'Готовим твой заказ'
+              : displayStatus === 'accepted'
+                ? 'Заказ оформлен'
+                : 'Готовим твой заказ'
         }}
       </h2>
-      <p>Совсем скоро будет вкусно</p>
+      <p>
+        {{
+          displayStatus === 'accepted' ? 'Ожидает подтверждения кафе' : 'Совсем скоро будет вкусно'
+        }}
+      </p>
     </div>
     <div class="ready-card">
       <ion-icon :icon="timeOutline" />
@@ -79,7 +78,9 @@ function repeat() {
             ? 'Заказ готов — можно забирать'
             : displayStatus === 'received'
               ? 'Спасибо, что заглянул!'
-              : `Будет готов примерно через ${minutes} минут`
+              : displayStatus === 'accepted'
+                ? 'Ожидает подтверждения кафе'
+                : `Ориентировочно через ${minutes} минут`
         }}</strong
         ><span>{{ app.stores.find((item) => item.id === order?.storeId)?.address }}</span>
       </div>
@@ -111,11 +112,17 @@ function repeat() {
       <div class="order-line total-line">
         <strong>Итого</strong><strong>{{ money(order.total) }}</strong>
       </div>
-      <p class="earned-note">+{{ order.earnedBonuses }} булочек уже на твоём счёте ✳</p>
+      <p v-if="order.earnedBonuses" class="earned-note">
+        +{{ order.earnedBonuses }} булочек
+        {{
+          displayStatus === 'received'
+            ? 'на твоём счёте'
+            : 'начислим после получения и подтверждения оплаты'
+        }}
+        ✳
+      </p>
     </section>
-    <button v-if="displayStatus === 'ready'" class="primary-button receive-button" @click="receive">
-      Я забрал заказ ✓</button
-    ><button class="secondary-button" @click="repeat">Повторить заказ →</button
+    <button class="secondary-button" @click="repeat">Повторить заказ →</button
     ><router-link to="/" class="text-link">На главную</router-link>
   </div>
   <div v-else class="screen">

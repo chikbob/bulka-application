@@ -54,6 +54,8 @@ export interface Order {
   createdAt: string
 }
 export interface User {
+  id?: string
+  email?: string
   name: string
   phone: string
   birthday: string

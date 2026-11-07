@@ -2,16 +2,25 @@ import { defineStore } from 'pinia'
 import { computed, ref } from 'vue'
 import { loyaltyService } from '../services/loyalty'
 import type { LoyaltyTransaction } from '../types'
-
+import { useAuthStore } from './auth'
+import { storageGet, storageSet } from '../utils'
 export const useLoyaltyStore = defineStore('loyalty', () => {
   const transactions = ref<LoyaltyTransaction[]>([])
   const balance = computed(() => transactions.value.reduce((sum, item) => sum + item.amount, 0))
+  const key = () => `bulka.loyalty.account.${useAuthStore().user.id}`
+  function reset() {
+    transactions.value = useAuthStore().authenticated ? storageGet(key(), []) : []
+  }
   async function load() {
-    transactions.value = await loyaltyService.list()
+    const id = useAuthStore().user.id
+    if (!id) {
+      reset()
+      return
+    }
+    const result = await loyaltyService.list()
+    if (id !== useAuthStore().user.id) return
+    transactions.value = result.transactions
+    storageSet(key(), transactions.value)
   }
-  async function add(item: LoyaltyTransaction) {
-    transactions.value = [item, ...transactions.value]
-    await loyaltyService.save(transactions.value)
-  }
-  return { transactions, balance, load, add }
+  return { transactions, balance, load, reset }
 })

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, nextTick, onMounted, watch } from 'vue'
+import { computed, nextTick, onMounted, onUnmounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { IonApp, IonIcon } from '@ionic/vue'
 import { homeOutline, restaurantOutline, receiptOutline, personOutline } from 'ionicons/icons'
@@ -7,8 +7,6 @@ import CartBar from './components/CartBar.vue'
 import { useAppStore } from './stores/app'
 import { useCatalogStore } from './stores/catalog'
 import { useAuthStore } from './stores/auth'
-import { useOrdersStore } from './stores/orders'
-import { useLoyaltyStore } from './stores/loyalty'
 
 const route = useRoute()
 const app = useAppStore()
@@ -27,14 +25,20 @@ watch(
     if (shell) shell.scrollTop = 0
   },
 )
+let syncTimer: ReturnType<typeof setInterval> | undefined
+const sync = () => {
+  if (document.visibilityState === 'visible') void useAuthStore().load()
+}
+onUnmounted(() => {
+  clearInterval(syncTimer)
+  document.removeEventListener('visibilitychange', sync)
+  window.removeEventListener('online', sync)
+})
 onMounted(async () => {
-  await Promise.all([
-    useCatalogStore().load(),
-    app.load(),
-    useAuthStore().load(),
-    useOrdersStore().load(),
-    useLoyaltyStore().load(),
-  ])
+  syncTimer = setInterval(sync, 30000)
+  document.addEventListener('visibilitychange', sync)
+  window.addEventListener('online', sync)
+  await Promise.all([useCatalogStore().load(), app.load(), useAuthStore().load()])
 })
 </script>
 

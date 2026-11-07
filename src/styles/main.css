@@ -94,15 +94,7 @@ ion-app {
 .red-dot {
   color: var(--red);
 }
-.demo-banner {
-  margin: 0 0 16px;
-  padding: 10px 13px;
-  border-radius: 12px;
-  background: #f2ebe2;
-  color: #685b53;
-  font-size: 11px;
-  font-weight: 700;
-}
+
 .screen-header {
   padding: 18px 0 21px;
 }
@@ -675,7 +667,9 @@ ion-app {
   gap: 11px;
   padding: 9px 10px;
   box-shadow: 0 14px 38px #2c1e1722;
-  transition: transform 180ms ease, box-shadow 180ms ease;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
 }
 .cart-bar-icon {
   position: relative;
@@ -2012,4 +2006,141 @@ ion-app {
 .receive-button {
   width: 100%;
   margin-top: 20px;
+}
+
+/* Account screens */
+.auth-screen {
+  display: flex;
+  flex-direction: column;
+}
+.auth-panel {
+  width: 100%;
+  max-width: 460px;
+  margin: 32px auto;
+}
+.auth-logo {
+  width: 130px;
+  height: auto;
+  display: block;
+  margin-bottom: 42px;
+}
+.auth-panel h1 {
+  font-size: clamp(30px, 5vw, 46px);
+  line-height: 1.15;
+  margin: 14px 0;
+  overflow-wrap: anywhere;
+}
+.auth-panel > p,
+.account-invite > p {
+  color: var(--muted, #8b8781);
+  line-height: 1.65;
+}
+.auth-tabs {
+  display: flex;
+  padding: 5px;
+  border-radius: 18px;
+  background: #eee9e2;
+  margin: 28px 0;
+  gap: 4px;
+}
+.auth-tabs button {
+  flex: 1;
+  padding: 13px 10px;
+  border-radius: 13px;
+  font-weight: 700;
+}
+.auth-tabs button.selected {
+  color: #d91017;
+  background: #fff;
+  box-shadow: 0 3px 12px #30251b08;
+}
+.auth-panel .primary-button,
+.account-invite .primary-button,
+.account-invite .secondary-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 14px;
+}
+.auth-panel .text-link {
+  display: block;
+  text-align: center;
+  margin-top: 24px;
+}
+.password-field {
+  position: relative;
+  display: block;
+}
+.password-field input {
+  padding-right: 52px;
+}
+.password-field button {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 8px;
+  font-size: 23px;
+}
+.account-invite {
+  background: #fff;
+  border: 1px solid #e9e1d7;
+  border-radius: 28px;
+  padding: clamp(24px, 4vw, 40px);
+  margin-bottom: 28px;
+}
+.account-illustration {
+  display: block;
+  font-size: 44px;
+  margin-bottom: 20px;
+}
+.account-invite h2 {
+  font-size: clamp(26px, 3vw, 36px);
+  margin-bottom: 14px;
+}
+.account-invite h3 {
+  font-size: 25px;
+  margin: 12px 0;
+}
+.checkout-account {
+  background: #f2e9dc;
+}
+.checkout-account .text-link {
+  display: block;
+  margin: 20px auto 0;
+  font-size: 14px;
+}
+.guest-note,
+.favorites-note {
+  margin: 8px 0 24px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #817b74;
+}
+.guest-note a,
+.favorites-note a,
+.field-hint a {
+  color: #d91017;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.profile-identity p {
+  overflow-wrap: anywhere;
+}
+button:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+
+.auth-panel .password-field {
+  display: block;
+  width: 100%;
+}
+.auth-panel .password-field input {
+  width: 100%;
+}
+.auth-panel .password-field button {
+  background: transparent;
+  border: 0;
 }

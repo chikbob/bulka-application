@@ -1,4 +1,4 @@
-import type { Category, LoyaltyTransaction, Order, Promotion, Store, User } from '../types'
+import type { Category, Order, Promotion, Store, User } from '../types'
 import productsJson from './products.json'
 import type { Product } from '../types'
 
@@ -46,8 +46,5 @@ export const initialUser: User = {
   birthday: '',
   notifications: true,
 }
-export const initialLoyalty: LoyaltyTransaction[] = [
-  { id: 'welcome', title: 'Приветственные булочки', date: '2026-09-20', amount: 430 },
-]
 export const initialOrders: Order[] = []
 export const LOYALTY_NAME = 'булочек'

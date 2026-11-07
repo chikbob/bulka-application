@@ -24,7 +24,11 @@ function repeat() {
         <small>{{ formatDate(order.createdAt) }}</small>
         <h3>Заказ №{{ order.number }}</h3>
       </div>
-      <span class="order-badge">{{ order.status === 'received' ? 'Получен' : 'Готовим' }}</span>
+      <span class="order-badge">{{
+        { accepted: 'Оформлен', preparing: 'Готовим', ready: 'Готов', received: 'Получен' }[
+          order.status
+        ]
+      }}</span>
     </div>
     <div class="order-images">
       <img

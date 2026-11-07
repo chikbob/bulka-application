@@ -7,6 +7,8 @@ import QuantitySelector from '../components/QuantitySelector.vue'
 import { useCartStore } from '../stores/cart'
 import { useCatalogStore } from '../stores/catalog'
 import { money } from '../utils'
+import { useAuthStore } from '../stores/auth'
+const auth = useAuthStore()
 const router = useRouter()
 const cart = useCartStore()
 const catalog = useCatalogStore()
@@ -56,7 +58,9 @@ const catalog = useCatalogStore()
           <span>Товары</span><strong>{{ money(cart.total) }}</strong>
         </div>
         <div>
-          <span>Начислим булочек</span
+          <span>{{
+            auth.authenticated ? 'Начислим после получения' : 'Булочки при входе в аккаунт'
+          }}</span
           ><strong class="red-text">+{{ cart.estimatedBonuses }}</strong>
         </div>
         <div class="cart-total">

@@ -2,6 +2,8 @@
 import EmptyState from '../components/EmptyState.vue'
 import OrderCard from '../components/OrderCard.vue'
 import { useOrdersStore } from '../stores/orders'
+import { useAuthStore } from '../stores/auth'
+const auth = useAuthStore()
 const orders = useOrdersStore()
 </script>
 <template>
@@ -11,6 +13,11 @@ const orders = useOrdersStore()
       <h1>Мои заказы<span class="red-dot">.</span></h1>
       <p>Вся вкусная история в одном месте</p>
     </header>
+    <p v-if="!auth.authenticated" class="guest-note">
+      Заказы с этого устройства.
+      <router-link to="/auth?next=/orders">Войти, чтобы увидеть заказы аккаунта</router-link>
+    </p>
+    <p v-if="auth.syncError" class="field-hint" role="status">{{ auth.syncError }}</p>
     <EmptyState
       v-if="!orders.orders.length"
       icon="☕"

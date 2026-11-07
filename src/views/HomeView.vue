@@ -39,7 +39,6 @@ function repeatOrder() {
       </div>
       <img class="header-logo" src="/images/logo-horizontal.png" alt="Булка" />
     </header>
-    <p class="demo-banner">Демо-версия · заказы не отправляются в кафе</p>
     <StoreSelector />
     <section class="hero-order">
       <div class="hero-copy">

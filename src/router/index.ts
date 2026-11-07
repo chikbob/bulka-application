@@ -10,6 +10,7 @@ export default createRouter({
     { path: '/', component: HomeView },
     { path: '/menu', component: () => import('../views/MenuView.vue') },
     { path: '/orders', component: () => import('../views/OrdersView.vue') },
+    { path: '/auth', component: () => import('../views/AuthView.vue') },
     { path: '/profile', component: () => import('../views/ProfileView.vue') },
     { path: '/product/:id', component: () => import('../views/ProductView.vue') },
     { path: '/cart', component: () => import('../views/CartView.vue') },
