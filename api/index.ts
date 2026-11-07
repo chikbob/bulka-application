@@ -1,6 +1,6 @@
 import { randomUUID } from 'node:crypto'
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { db } from '../server/db.ts'
+import { db } from '../server/db.js'
 import {
   HttpError,
   hash,
@@ -12,9 +12,9 @@ import {
   cookie,
   limit,
   text,
-} from '../server/security.ts'
+} from '../server/security.js'
 import products from '../src/data/products.json' with { type: 'json' }
-import type { Product, Order, User } from '../src/types/index.ts'
+import type { Product, Order, User } from '../src/types/index.js'
 const catalog = new Map((products as Product[]).map((p) => [p.id, p]))
 function required(user: User | null): asserts user is User & { id: string } {
   if (!user?.id) throw new HttpError(401, 'Войдите в аккаунт')

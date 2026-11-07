@@ -1,7 +1,7 @@
 import { createHash, randomBytes, scrypt as scryptCallback, timingSafeEqual } from 'node:crypto'
 import { promisify } from 'node:util'
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { db } from './db.ts'
+import { db } from './db.js'
 const scrypt = promisify(scryptCallback)
 export const hash = (value: string) => createHash('sha256').update(value).digest('hex')
 export class HttpError extends Error {
