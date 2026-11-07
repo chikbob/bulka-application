@@ -5,6 +5,9 @@
   <FilesMatch "\.(webp|png|svg|ico)$">
     Header set Cache-Control "public, max-age=86400"
   </FilesMatch>
+  <FilesMatch "^(sw\.js|sw-migrate\.js|registerSW\.js)$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+  </FilesMatch>
   <FilesMatch "\.(html|webmanifest)$">
     Header set Cache-Control "no-cache"
   </FilesMatch>

@@ -8,12 +8,15 @@ export default defineConfig({
     VitePWA({
       manifest: false,
       registerType: 'prompt',
+      injectRegister: false,
       includeAssets: ['manifest.webmanifest', 'apple-touch-icon.png', 'icons/*.png'],
       workbox: {
         globPatterns: ['**/*.{js,css,html,woff2}'],
         navigateFallback: '/index.html',
         navigateFallbackDenylist: [/^\/api\//],
         cleanupOutdatedCaches: true,
+        clientsClaim: true,
+        importScripts: ['/sw-migrate.js'],
         runtimeCaching: [
           {
             urlPattern: ({ url, request }) =>

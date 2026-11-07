@@ -13,6 +13,7 @@ import CartBar from './components/CartBar.vue'
 import { useAppStore } from './stores/app'
 import { useCatalogStore } from './stores/catalog'
 import { useAuthStore } from './stores/auth'
+import { updateAvailable, applyingUpdate, applyAppUpdate } from './pwa'
 
 const route = useRoute()
 const app = useAppStore()
@@ -77,6 +78,12 @@ onMounted(async () => {
         <CartBar class="desktop-cart" />
       </nav>
       <div v-if="app.toast" class="toast" role="status">{{ app.toast }}</div>
+      <aside v-if="updateAvailable" class="app-update-notice" role="status">
+        <span>Доступна новая версия Булки</span>
+        <button :disabled="applyingUpdate" @click="applyAppUpdate">
+          {{ applyingUpdate ? 'Обновляем…' : 'Обновить' }}
+        </button>
+      </aside>
     </main>
   </ion-app>
 </template>

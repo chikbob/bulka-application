@@ -10,5 +10,7 @@ import '@fontsource-variable/unbounded/index.css'
 import './styles/main.css'
 import App from './App.vue'
 import router from './router'
+import { registerPwaUpdates } from './pwa'
 
 createApp(App).use(IonicVue).use(createPinia()).use(router).mount('#app')
+void registerPwaUpdates()
